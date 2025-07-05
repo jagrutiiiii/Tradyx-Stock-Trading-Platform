@@ -1,0 +1,58 @@
+/* Signup.css - Styles for the Signup page */
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+}
+
+.signup-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.signup-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(60, 72, 88, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 340px;
+}
+
+.signup-form input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.signup-form input:focus {
+  border: 1.5px solid #1976d2;
+}
+
+.signup-form button {
+  padding: 0.9rem 1rem;
+  background: linear-gradient(90deg, #1976d2 60%, #00bcd4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signup-form button:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #0097a7 100%);
+}

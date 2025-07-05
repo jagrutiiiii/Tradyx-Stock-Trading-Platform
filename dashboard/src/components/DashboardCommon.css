@@ -1,0 +1,95 @@
+/* Orders Table Styling */
+.orders-table-container {
+  margin: 2rem auto;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(60,72,88,0.10);
+  padding: 1.5rem 2rem;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+  background: #fff;
+}
+
+.orders-table th, .orders-table td {
+  padding: 0.85rem 1.1rem;
+  text-align: left;
+}
+
+.orders-table th {
+  background: #f5f7fa;
+  color: #2d3748;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.orders-table tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s;
+}
+
+.orders-table tr:hover {
+  background: #f7fafc;
+}
+
+.orders-table td {
+  color: #444;
+}
+
+.order-buy {
+  color: #1ca97a;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.order-sell {
+  color: #e53e3e;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+/* DashboardCommon.css - Add styles for profile dropdown and logout button */
+
+.profile {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(60,72,88,0.12);
+  border-radius: 8px;
+  min-width: 110px;
+  z-index: 100;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+
+.username:hover{
+  color: white !important;
+}
