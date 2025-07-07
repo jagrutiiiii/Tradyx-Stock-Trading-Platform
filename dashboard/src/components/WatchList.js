@@ -134,7 +134,7 @@ const WatchListActions = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
   const [canSell, setCanSell] = useState(false);
   const [sellStatus, setSellStatus] = useState("");
-  const [buyStatus, setBuyStatus] = useState("");
+  const [setBuyStatus] = useState("");
   // Check if the stock is in orders (can be sold)
   React.useEffect(() => {
     const checkOrder = async () => {
