@@ -21,7 +21,8 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3002/api/login", form);
+      const backendURL = process.env.REACT_APP_BACKEND_URL ;
+      const res = await axios.post(`${backendURL}/api/login`, form);
       localStorage.setItem("token", res.data.token);
       alert("Login successful");
       window.location.href = "http://localhost:3001";

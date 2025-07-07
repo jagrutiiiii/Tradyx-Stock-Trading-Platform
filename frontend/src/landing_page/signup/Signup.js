@@ -21,7 +21,8 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3002/api/signup", form);
+      const backendURL = process.env.REACT_APP_BACKEND_URL ;
+      const res = await axios.post(`${backendURL}/api/signup`, form);
       // Redirect to dashboard after successful 
       alert("Signup successful! Redirecting to dashboard...");
       // navigate("/dashboard");
