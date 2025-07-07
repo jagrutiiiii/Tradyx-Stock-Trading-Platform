@@ -17,7 +17,7 @@ const Menu = () => {
   const handleLogout = () => {
     localStorage.removeItem("token");
     setIsProfileDropdownOpen(false);
-    window.location.href = "http://localhost:3000";
+    window.location.href = "https://tradyx.netlify.app/";
   };
 
   const menuClass = "menu";
