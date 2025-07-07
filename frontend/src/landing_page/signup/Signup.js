@@ -26,7 +26,7 @@ const Signup = () => {
       // Redirect to dashboard after successful 
       alert("Signup successful! Redirecting to dashboard...");
       // navigate("/dashboard");
-      window.location.href = "http://localhost:3001";
+      window.location.href = "https://tradyx-dashboard.netlify.app/";
     } catch (err) {
       alert(err.response?.data?.message || "Signup failed");
     }

@@ -25,7 +25,7 @@ const Login = () => {
       const res = await axios.post(`${backendURL}/api/login`, form);
       localStorage.setItem("token", res.data.token);
       alert("Login successful");
-      window.location.href = "http://localhost:3001";
+      window.location.href = "https://tradyx-dashboard.netlify.app/";
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     }
