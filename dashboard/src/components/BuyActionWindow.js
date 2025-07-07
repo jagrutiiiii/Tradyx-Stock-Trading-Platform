@@ -15,7 +15,7 @@ const BuyActionWindow = ({ uid }) => {
 
   const handleBuyClick = async (e) => {
     try {
-      await axios.post("http://localhost:3002/newOrder", {
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/newOrder`, {
         name: uid,
         qty: stockQuantity,
         price: stockPrice,
@@ -23,7 +23,6 @@ const BuyActionWindow = ({ uid }) => {
       });
       context.closeBuyWindow();
     } catch (err) {
-      // Optionally show a user-friendly message
       // alert("Buy failed. Try again.");
     }
   };

@@ -139,7 +139,7 @@ const WatchListActions = ({ uid }) => {
   React.useEffect(() => {
     const checkOrder = async () => {
       try {
-        const res = await axios.get("http://localhost:3002/allOrders");
+        const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/allOrders`);
         const found = res.data.some((order) => order.name === uid);
         setCanSell(found);
       } catch {
@@ -167,7 +167,7 @@ const WatchListActions = ({ uid }) => {
       return;
     }
     try {
-      await axios.delete(`http://localhost:3002/deleteOrder/${uid}`);
+      await axios.delete(`${process.env.REACT_APP_BACKEND_URL}/deleteOrder/${uid}`);
       setSellStatus("Sold successfully!");
       setCanSell(false);
     } catch (err) {
